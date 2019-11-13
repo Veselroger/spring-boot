@@ -1,0 +1,17 @@
+plugins {
+	id 'org.springframework.boot' version '2.2.0.RELEASE'
+}
+apply plugin: 'java'
+apply plugin: 'io.spring.dependency-management'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+	
+	implementation 'com.h2database:h2:1.4.200'
+	testCompile 'org.springframework.boot:spring-boot-starter-test'
+}
